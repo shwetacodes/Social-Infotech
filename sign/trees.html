@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TREE PLANTATION</title>
+	<style type="text/css">
+	   input
+	   {
+	   	border-style: solid;
+	   	border-color: black;
+	   	border: 8;
+	   }
+	   
+	  .mainsection
+	  {
+	  	color: white;
+	  	background-color: black;
+	  	height: 50px;
+	  }
+	  .main
+	  {
+           background-color: white;
+           padding: 20px;
+	  }
+	 
+		.res
+		{
+			float: center;
+			margin-top: 35px;
+			margin-left: 200px;
+			border: 50%;
+			border-style: solid;
+			border-color: grey;
+			background-color: green;
+			text-align: left;
+			
+			width: 900px;
+			float: left;
+
+		}
+		.res1
+		{
+			float: center;
+			margin-top: 17px;
+			margin-left: 200px;
+			border: 50%;
+			border-style: solid;
+			border-color: grey;
+			background-color: white;
+			text-align: left;
+			
+			width: 900px;
+			float: left;
+	    }
+	    .res2
+		{
+			float: center;
+			margin-top: 17px;
+			margin-left: 200px;
+			border: 50%;
+			border-style: solid;
+			border-color: grey;
+			background-color: grey;
+			text-align: left;
+			
+			width: 900px;
+			float: left;
+	    }
+
+		.res img
+		{
+			margin-top: 10px;
+			margin-left: 20px;
+			display: inline;
+			margin: 30px;
+
+		}
+       span
+       {
+       	display: block;
+       	
+       	color: white;
+       }
+	    		.res3{
+	    			
+			float: center;
+			margin-top: 17px;
+			margin-left: 200px;
+			border: 50%;
+			border-style: solid;
+			border-color: grey;
+			background-color: green;
+			text-align: left;
+			padding-top: 20px;
+			width: 900px;
+			float: left;
+	    }  
+      .max
+      {
+      	display: block;
+      	width:800px;
+      	padding: 20px;
+      }
+      .chitra1
+		{
+			float: center;
+			margin-top: 17px;
+			margin-left: 200px;
+			border: 50%;
+			border-style: solid;
+			border-color: grey;
+			background-color: green;
+			text-align: left;
+			padding-top: 20px;
+			width: 900px;
+			float: left;
+	    }
+		
+#myProgress {
+  width: 30%;
+  background-color: #ddd;
+ 
+}
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+#Progress {
+  width: 30%;
+  background-color: #ddd;
+ 
+}
+
+#Bar {
+  width: 10%;
+  height: 30px;
+  background-color: blue;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+	</style>
+	
+	<script type="text/javascript">
+	function Move() {
+  var elem = document.getElementById("myBar");   
+  var width = 10;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 20) {
+      clearInterval(id);							//land
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+function Mov() {
+  var elem = document.getElementById("Bar");   
+  var width = 10;
+  var id = setInterval(frame, 10);
+  function frame() {								//water
+    if (width >= 10) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+
+
+	
+	</script>
+</head>
+
+<body bgcolor="grey">
+	<div class="mainsection">
+	<h1><center>TREE PLANTATION CHART OF YOUR REGION</center></h1>
+	</div>
+
+	<DIV class="res">
+     
+		<img src="out.jpeg" width="200px" height="200px" align="left"><font size=6px><span style="margin-top: 70px" align="center">OOOOhhh!!! <br>How many trees are<br>there in your environment .Let's take a look .<br>
+		<font color="black">Is it?<br>Yes it isss</font></span></font>
+		</DIV>
+	<div class="res1">
+	<center><h3>TREE PLANTATION  LEVEL</center>
+	<hr>
+  
+  <font size="5px">
+  	
+	Level of <b>Indoor tree plantation</b> in your area is 
+  
+	 <div id="myProgress">
+	   <div id="myBar">10%</div>
+	 </div>
+	 <button onclick="Move()">^</button> 
+	
+  	<hr>
+  	
+  	Level of <b>Outdoor tree planation</b> in your area is
+  
+	<div id="Progress">
+		<div id="Bar">10%</div>
+		</div>
+	<button onclick="Mov()">^</button> 
+  	<hr>
+  	
+    
+  	</font>
+  	
+</div>
+
+<div class="res3"><center><font color="white">
+  <h2>Do you know about Tree plantation??</h2><br></center></font></center>
+  <div class="main">
+  	<font size="5px">
+  	<div class="max"><img src="hose.jpg" width="120px" height="137px" style="float: left; border-style: solid; border-color: green;border-radius: 30px; border: 8">
+  	<font size="6px">Indoor tree plantation:</font><br>Indoor plants not only help clean the environment around them, but they act as a quick decorating tool. We found 15 indoor house plants that anyone can keep alive and thriving. If you've got kids or pets, do note before you buy indoor plant has an air-purifying quality that can absorb and strip toxins like formaldehyde from materials in the home like carpet.<br><br>
+  	<img src="out.jpeg" width="120px" height="137px" style="float: left; border-style: solid; border-color: green;border-radius: 30px; border: 8">
+     <font size="6px" style="padding-left: 10px; margin-left: 0">Outdoor tree plantation:</font><br>Trees reduce the urban heat island effect through evaporative cooling and reducing the amount of sunlight that reaches parking lots and buildings. This is especially true in areas with large impervious surfaces, such as parking lots of stores and industrial complexes.
+     Trees improve our air quality by filtering harmful dust and pollutants such as ozone, carbon monoxide, and sulfur dioxide from the air we breathe.
+      Trees give off oxygen that we need to breathe.<br><br>
+     
+</div>  	</font>
+  </div></div>
+  
+  <div class="chitra1"><center>
+   <font size="6px" color="white">Points to be follow</font>
+ 	<div>
+ 	<table cellpadding="5" cellspacing="5" border="2">
+<tr><td>DO'S</td><td>DON't</td></tr>
+<tr><td>Do choose trees for specific purposes.<BR>Do plant for energy conservation.<BR>Do dig and prepare the hole carefully.<br>Do plant at the proper time.<br>Do set up the tree for success.</td><td>Don’t plant large trees in small areas<br>Don’t choose a tree just because it grows fast.<br>Don’t over-fertilize.<br>Don’t trample the soil after tree planting.<br>Don’t water improperly. </td></tr>
+ 	</table>
+ 	</div>
+  </center>
+  </div>
+
+</body>
+</html>

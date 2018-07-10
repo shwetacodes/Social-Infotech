@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DISEASES SPREADS</title>
+	<style type="text/css">
+	   input
+	   {
+	   	border-style: solid;
+	   	border-color: black;
+	   	border: 8;
+	   }
+	   
+	  .mainsection
+	  {
+	  	color: white;
+	  	background-color: black;
+	  	height: 50px;
+	  }
+	  .main
+	  {
+           background-color: white;
+           padding: 20px;
+	  }
+	 
+		.res
+		{
+			float: center;
+			margin-top: 35px;
+			margin-left: 200px;
+			border: 50%;
+			border-style: solid;
+			border-color: grey;
+			background-color: green;
+			text-align: left;
+			
+			width: 900px;
+			float: left;
+
+		}
+		.res1
+		{
+			float: center;
+			margin-top: 17px;
+			margin-left: 200px;
+			border: 50%;
+			border-style: solid;
+			border-color: grey;
+			background-color: white;
+			text-align: left;
+			
+			width: 900px;
+			float: left;
+	    }
+	    .res2
+		{
+			float: center;
+			margin-top: 17px;
+			margin-left: 200px;
+			border: 50%;
+			border-style: solid;
+			border-color: grey;
+			background-color: grey;
+			text-align: left;
+			
+			width: 900px;
+			float: left;
+	    }
+
+		.res img
+		{
+			margin-top: 10px;
+			margin-left: 20px;
+			display: inline;
+			margin: 30px;
+
+		}
+       span
+       {
+       	display: block;
+       	
+       	color: white;
+       }
+	    		.res3{
+	    			
+			float: center;
+			margin-top: 17px;
+			margin-left: 200px;
+			border: 50%;
+			border-style: solid;
+			border-color: grey;
+			background-color: green;
+			text-align: left;
+			padding-top: 20px;
+			width: 900px;
+			float: left;
+	    }  
+      .max
+      {
+      	display: block;
+      	width:800px;
+      	padding: 20px;
+      }
+      .chitra1
+		{
+			float: center;
+			margin-top: 17px;
+			margin-left: 200px;
+			border: 50%;
+			border-style: solid;
+			border-color: grey;
+			background-color: green;
+			text-align: left;
+			padding-top: 20px;
+			width: 900px;
+			float: left;
+	    }
+	    .ro
+	    {
+	    	margin-top: 17px;
+	    	border-color: grey;
+	    }
+	    .tad
+	    {
+
+	    }
+	    
+#myProgress {
+  width: 30%;
+  background-color: #ddd;
+  margin-left: 0;
+ 
+}
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: red;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  margin-left: 0;
+}
+#Progress {
+  width: 30%;
+  background-color: #ddd;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#Bar {
+  width: 10%;
+  height: 30px;
+  background-color: red;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  margin-left: 0;
+  padding-left: 0;
+}
+		
+	</style>
+
+	<script type="text/javascript">
+	function Move() {
+  var elem = document.getElementById("myBar");   
+  var width = 10;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 45) {
+      clearInterval(id);							//contagious
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+function Mov() {
+  var elem = document.getElementById("Bar");   
+  var width = 10;
+  var id = setInterval(frame, 10);
+  function frame() {								//non-contagious
+    if (width >= 15) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+
+</head>
+<body bgcolor="grey">
+<div class="mainsection">
+<h1><center>DISEASES CHART OF YOUR REGION</center></h1>
+</div>
+
+<DIV class="res">
+     
+	<img src="dc10.jpg" width="200px" height="200px" align="left"><font size=6px><span style="margin-top: 70px" align="center">OOOOhhh!!! No <br>You are surrounded <br>by various diseases .Don't wait get rid of it .<br>
+	<font color="black">Is it?<br>Yes it isss</font></span></font>
+	</DIV>
+<div class="res1">
+  <center><h3>Diseases in your area</center>
+  <hr>
+  <font size="5px">
+  	<b>Contagious diseases</b> in your area is such as - Common cold,Influenza,strep throat etc
+  	
+  	<div id="myProgress">
+	   <div id="myBar">10%</div>
+	 </div>
+	 <button onclick="Move()">^</button> 
+
+  	<hr>
+  	
+  	<b>Non-Contagious diseases</b> in your area is such as - Asthma,Cancer,Diabetes etc
+  	
+  	<div id="Progress">
+		<div id="Bar">10%</div>
+		</div>
+	<button onclick="Mov()">^</button> 
+  	
+ </font>
+  	
+</div>
+<div class="res3"><center><font color="white">
+  <h2>Do you know any thing about diseases???How to get rid of this</h2><br></center></font></center>
+  <div class="main">
+  	<font size="5px">
+  	<div class="max"><img src="con5.jpg" width="120px" height="120px" style="float: left; border-style: solid; border-color: green;border-radius: 30px; border: 8">
+  	<font size="6px">Contagious Diseases:</font><br>A contagious disease is a subset category of transmissible diseases, which are transmitted to other persons, either by physical contact with the person suffering the disease, or by casual contact with their secretions or objects touched by them or airborne route among other routes.<br><br>
+  	<img src="con2.jpg" width="120px" height="137px" style="float: left; border-style: solid; border-color: green;border-radius: 30px; border: 8">
+     <font size="6px" style="padding-left: 10px; margin-left: 0">Non Contagious diseases:</font><br>A non-communicable disease (NCD) is a medical condition or disease that is not caused by infectious agents (non-infectious or non-transmissible). NCDs can refer to chronic diseases which last for long periods of time and progress slowly. ... NCDs are the leading cause of death globally.<br><br>
+     </div>  	</font>
+  </div></div>
+  <div class="chitra1"><center>
+   <font size="6px"><u>Measures to prevent and control the diseases</u>
+   </center>
+ 	
+ 	
+<font size="4px" color="black">
+<table align="center" class="ro" cellspacing="5px" cellpadding="5px" border="2" >
+<tr><td>CONTAGIOUS DISEASES</td><td>NON CONTAGIOUS DISEASES</td></tr>
+    <tr>
+    <td>
+    
+    Wash your hands often.<br>
+    Get vaccinated.<br> 
+    Use antibiotics sensibly.<br> 
+    Be smart about food preparation.<br>
+    Disinfect the 'hot zones' 
+    in your residence.<br> 
+    Practice safer sex.<br>
+    Don't share personal items
+    Travel wisely.<br> </td><td class="tad" >
+    	Don't consume alcohol.<br>
+    	Don't cosume tobacco.<br>
+    	Maintain level of sugar to control daibetes.<br>
+    	Maintain proper blood pressure.<br>
+    	Take healthy diet.<br>
+    	Take regular exercise.<br>
+    	Reduce stress and pressure.<br>
+
+
+    </td></tr></table>
+
+ 	  </font>
+ 	                                                           
+ 	
+  </div>
+
+
+
+</body>
+</html>

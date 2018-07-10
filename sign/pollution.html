@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>POLLUITON LEVEL</title>
+	<style type="text/css">
+	   input
+	   {
+	   	border-style: solid;
+	   	border-color: black;
+	   	border: 8;
+	   }
+	   
+	  .mainsection
+	  {
+	  	color: white;
+	  	background-color: black;
+	  	height: 50px;
+	  }
+	  .main
+	  {
+           background-color: white;
+           padding: 20px;
+	  }
+	 
+		.res
+		{
+			float: center;
+			margin-top: 35px;
+			margin-left: 200px;
+			border: 50%;
+			border-style: solid;
+			border-color: grey;
+			background-color: green;
+			text-align: left;
+			
+			width: 900px;
+			float: left;
+
+		}
+		.res1
+		{
+			float: center;
+			margin-top: 17px;
+			margin-left: 200px;
+			border: 50%;
+			border-style: solid;
+			border-color: grey;
+			background-color: white;
+			text-align: left;
+			
+			width: 900px;
+			float: left;
+	    }
+	    .res2
+		{
+			float: center;
+			margin-top: 17px;
+			margin-left: 200px;
+			border: 50%;
+			border-style: solid;
+			border-color: grey;
+			background-color: grey;
+			text-align: left;
+			
+			width: 900px;
+			float: left;
+	    }
+
+		.res img
+		{
+			margin-top: 10px;
+			margin-left: 20px;
+			display: inline;
+			margin: 30px;
+
+		}
+       span
+       {
+       	display: block;
+       	
+       	color: white;
+       }
+	    		.res3{
+	    			
+			float: center;
+			margin-top: 17px;
+			margin-left: 200px;
+			border: 50%;
+			border-style: solid;
+			border-color: grey;
+			background-color: green;
+			text-align: left;
+			padding-top: 20px;
+			width: 900px;
+			float: left;
+	    }  
+      .max
+      {
+      	display: block;
+      	width:800px;
+      	padding: 20px;
+      }
+      .chitra1
+		{
+			float: center;
+			margin-top: 17px;
+			margin-left: 200px;
+			border: 50%;
+			border-style: solid;
+			border-color: grey;
+			background-color: green;
+			text-align: left;
+			padding-top: 20px;
+			width: 900px;
+			float: left;
+	    }
+		
+#myProgress {
+  width: 30%;
+  background-color: #ddd;
+ 
+}
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+#Progress {
+  width: 30%;
+  background-color: #ddd;
+ 
+}
+
+#Bar {
+  width: 10%;
+  height: 30px;
+  background-color: blue;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+#Pro {
+  width: 30%;
+  background-color: #ddd;
+ 
+}
+
+#Ba {
+  width: 10%;
+  height: 30px;
+  background-color: #696969;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+#Pr {
+  width: 30%;
+  background-color: #ddd;
+ 
+}
+
+#B {
+  width: 10%;
+  height: 30px;
+  background-color: orange;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+	</style>
+	
+	<script type="text/javascript">
+	function Move() {
+  var elem = document.getElementById("myBar");   
+  var width = 10;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 15) {
+      clearInterval(id);							//land
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+function Mov() {
+  var elem = document.getElementById("Bar");   
+  var width = 10;
+  var id = setInterval(frame, 10);
+  function frame() {								//water
+    if (width >= 10) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+
+function Mo() {
+  var elem = document.getElementById("Ba");   
+  var width = 10;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 15) {								//air
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+function Mu() {
+  var elem = document.getElementById("B");   
+  var width = 10;
+  var id = setInterval(frame, 10);
+  function frame() {								//noise
+    if (width >= 30) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+	
+	</script>
+</head>
+
+<body bgcolor="grey">
+	<div class="mainsection">
+	<h1><center>POLLUTION CHART OF YOUR REGION</center></h1>
+	</div>
+
+	<DIV class="res">
+     
+		<img src="worry1.jpg" width="200px" height="200px" align="left"><font size=6px><span style="margin-top: 70px" align="center">OOOOhhh!!! No <br>You are surrounded <br>by polluted environment .Don't wait get rid of it .<br>
+		<font color="black">Is it?<br>Yes it isss</font></span></font>
+		</DIV>
+	<div class="res1">
+	<center><h3>POLLUTION LEVEL</center>
+	<hr>
+  
+  <font size="5px">
+  	
+	Level of <b>Land pollution</b> in your area is -solid wastes,garbage deposition,etc
+  
+	 <div id="myProgress">
+	   <div id="myBar">10%</div>
+	 </div>
+	 <button onclick="Move()">^</button> 
+	
+  	<hr>
+  	
+  	Level of <b>Water pollution</b> in your area is -poor drainage system,chemicals from factories,etc
+  
+	<div id="Progress">
+		<div id="Bar">10%</div>
+		</div>
+	<button onclick="Mov()">^</button> 
+  	<hr>
+  	
+    Level of <b>Air pollution</b> in your area is -chimney,smoke from vehicles,etc
+  	
+	<div id="Pro">
+		<div id="Ba">10%</div>
+	</div>
+	<button onclick="Mo()">^</button> 
+  	<hr>
+  	Level of <b>Noise pollution </b>in your area is -railways,traffic,etc
+  
+	<div id="Pr">
+		<div id="B">10%</div>
+	</div>
+	<button onclick="Mu()">^</button> 
+  	<hr>
+  	</font>
+  	
+</div>
+
+<div class="res3"><center><font color="white">
+  <h2>Do you know about Pollution??Let's take a look.</h2><br></center></font></center>
+  <div class="main">
+  	<font size="5px">
+  	<div class="max"><img src="land.jpeg" width="120px" height="120px" style="float: left; border-style: solid; border-color: green;border-radius: 30px; border: 8">
+  	<font size="6px">Land pollution:</font><br>Land pollution is the deterioration (destruction) of the earth’s land surfaces, often directly or indirectly as a result of man’s activities and their misuse of land resources.<br><br>
+  	<img src="water.jpg" width="120px" height="137px" style="float: left; border-style: solid; border-color: green;border-radius: 30px; border: 8">
+     <font size="6px" style="padding-left: 10px; margin-left: 0">Water pollution:</font><br>Water pollution is the contamination of water bodies (e.g. lakes, rivers, oceans, aquifers and groundwater). This form of environmental degradation occurs when pollutants are directly or indirectly discharged into water bodies without adequate treatment to remove harmful compounds.<br><br>
+     <img src="air.jpg" width="120px" height="137px" style="float: left; border-style: solid; border-color: green;border-radius: 30px; border: 8">
+     <font size="6px">Air pollution:</font><br>Air pollution occurs when harmful substances including particulates and biological molecules are introduced into Earth's atmosphere. It may cause diseases, allergies or death of humans; it may also cause harm to other living organisms such as animals and food crops, and may damage the natural or built environment.<br><br>
+     <img src="noise.jpg" width="120px" height="137px" style="float: left; border-style: solid; border-color: green;border-radius: 30px; border: 8">
+     <font size="6px">Noise pollution:</font><br>Noise pollution is the disturbing noise with harmful impact on the activity of human or animal life. The source of outdoor noise worldwide is mainly caused by machines and transportation systems, motor vehicles engines and trains.</div>  	</font>
+  </div></div>
+  
+  <div class="chitra1"><center>
+   <font size="6px" color="white">Measures to avoid the pollution:</font>
+ 	<div>
+ 	<table cellpadding="5" cellspacing="5" border="2">
+		<tr><td>LAND POLLUTION</td><td>WATER POLLUTION</td><td>AIR POLLUTION</td><td>NOISE POLLUTION</td></tr>
+		<tr><td>Proper waste disposal</td><td>Don't throw garbage in rivers</td><td>Use public transport</td><td>Avoid DJ</td></tr>
+ 	</table>
+ 	</div>
+  </center>
+  </div>
+
+</body>
+</html>
